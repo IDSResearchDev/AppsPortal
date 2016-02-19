@@ -1,0 +1,10 @@
+﻿{
+  "AppSettings": {
+    "SiteEmailAddress": "lim.froy@gmail.com",
+    "BingKey": "lololoo"
+  },
+  "Data": {
+    "WorldContextConnection": "Server=(localdb)\\ProjectsV12;Database=TheWorldDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  }
+
+}
