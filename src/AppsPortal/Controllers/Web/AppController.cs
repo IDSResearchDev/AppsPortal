@@ -65,7 +65,7 @@ namespace AppsPortal.Controllers.Web
             return View();
         }
 
-        public IActionResult Download(DownloadViewModel model)
+        public IActionResult Download()
         {
 
             return View();

@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("app-downloads",["simpleControls","ngRoute"]).config(["$routeProvider",function(o){o.when("/",{controller:"downloadController",controllerAs:"vm",templateUrl:"/views/downloadView.html"}),o.otherwise({redirectTo:"/"})}])}();
