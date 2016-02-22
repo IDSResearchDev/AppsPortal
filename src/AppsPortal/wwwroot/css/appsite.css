@@ -1,0 +1,286 @@
+﻿/*
+    CSS file
+*/
+
+/*
+    Carousel
+*/
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+
+
+/* custom css navbar*/
+.navbar-default {
+    background-color: #f5f7fa;
+    border-color: #656d78;
+}
+
+    .navbar-default .navbar-brand {
+        color: #434a54;
+    }
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #aab2bd;
+        }
+
+    .navbar-default .navbar-text {
+        color: #434a54;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #434a54;
+    }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #aab2bd;
+        }
+
+    .navbar-default .navbar-nav > li > .dropdown-menu {
+        background-color: #f5f7fa;
+    }
+
+        .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+            color: #434a54;
+        }
+
+            .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+                color: #aab2bd;
+                background-color: #656d78;
+            }
+
+        .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+            background-color: #656d78;
+        }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #aab2bd;
+        background-color: #656d78;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #aab2bd;
+        background-color: #656d78;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #aab2bd;
+        background-color: #656d78;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #656d78;
+    }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #656d78;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #434a54;
+        }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #434a54;
+    }
+
+    .navbar-default .navbar-link {
+        color: #434a54;
+    }
+
+        .navbar-default .navbar-link:hover {
+            color: #aab2bd;
+        }
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #434a54;
+    }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #aab2bd;
+        }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #aab2bd;
+        background-color: #656d78;
+    }
+}
+
+
+
+/* additional CSS */
+
+#content {
+    padding: 50px 10px 10px 10px;
+}
+
+#head {
+    height: 80px;
+}
+
+.small{
+    width: 30px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #2d577f;
+    color: #ececec;
+    z-index: 1000;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    line-height: 1.6em;
+    padding: 5px 5px 5px 100px;
+}
+
+    .header.shrink {
+        height: 60px;
+        line-height: 80px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .header h4 {
+        font-weight: normal;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .header.shrink h4 {
+        font-size: 14px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+.navbar.shrinkNav {
+    top: 60px;
+}
+
+
+
+#footer {
+    width: 100%;
+    background: #2d577f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.6em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+
+
+
+#topnavbar {
+    margin: 0;
+}
+
+    #topnavbar.affix {
+        position: fixed;
+        width: 100%;
+    }
+
+/*.scrollToTop {
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    position: fixed;
+    bottom: 75px;
+    right: 40px;
+    display: none;
+}*/
+
+.scroll{
+
+}
+
+.scrollToTop {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: black;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+    .scrollToTop:hover {
+        text-decoration: none;
+    }
+
+.toTop {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #27AE61 url("up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/* Cirlce rounded shape ~ scroll to Top function*/
+#circle {
+    width: 50px;
+    height: 50px;
+    background: #ececec url('../../img/angleup24.svg') no-repeat center;
+    bottom: 75px;
+    position: fixed;
+    right: 40px;
+    text-align: center;
+    vertical-align: central;
+    align-items: center;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+/*background: #ececec;*/
