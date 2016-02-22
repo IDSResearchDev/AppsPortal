@@ -1,1 +1,3 @@
 src/AppsPortal/node_modules/
+.vs/config/applicationhost.config
+artifacts/
