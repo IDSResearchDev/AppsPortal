@@ -4,16 +4,20 @@
     $(document).ready(function () {
 
         //Check to see if the window is top if not then display button
+        //document.getElementsByClassName('.circle').style.display = 'block';
+        //document.getElementsByClassName('.circle').style.display = 'none';
+        
+
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.scroll').fadeIn();
+            if ($(this).scrollTop() > 300) {
+                $('.circle').fadeIn();
             } else {
-                $('.scroll').fadeOut();
+                $('.circle').fadeOut();
             }
         });
 
         //Click event to scroll to top
-        $('.scroll').click(function () {
+        $('.circle').click(function () {
             $('html, body').animate({ scrollTop: 0 }, 800);
             return false;
         });

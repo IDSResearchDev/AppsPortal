@@ -65,14 +65,9 @@
        
     </div>
     
-    <div class="scroll">
-        <a href="#" >
-            <div id="circle">
-               
-            </div>
-        </a>
+
+        <a href="#" class="circle"> </a>
         
-    </div>
 
     <div class="footer" id="footer">
         <div>
@@ -95,35 +90,6 @@
         <script type="text/javascript" src="~/lib/_app/scrollToTop.js"></script>
     </environment>
 
-    <script>
-        $('#topnavbar').affix({
-            offset: {
-                top: $('.header').height
-            }
-        });
-
-    </script>
-    <script type="text/javascript" src="~/js/scrollToTop.js"></script>
-    <script>
-        $(function () {
-            var shrinkHeader = 300;
-            $(window).scroll(function () {
-                var scroll = getCurrentScroll();
-                if (scroll >= shrinkHeader) {
-                    $('.header').addClass('shrink');
-                    $('.navbar').addClass('shrinkNav');
-                }
-                else {
-                    $('.header').removeClass('shrink');
-                    $('.navbar').removeClass('shrinkNav');
-                }
-            });
-
-            function getCurrentScroll() {
-                return window.pageYOffset;
-            }
-        });
-    </script>
     @RenderSection("Scripts", false)
 
 </body>
