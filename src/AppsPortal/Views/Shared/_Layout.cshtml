@@ -37,10 +37,10 @@
             </div>
             <!-- nav links -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                <ul class="nav navbar-nav" id="mainNav">
+                    <li><a asp-controller="App" asp-action="Index">Home</a></li>
                     <li><a asp-controller="App" asp-action="Download">Downloads</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a asp-controller="App" asp-action="About">About</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -85,6 +85,7 @@
 
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <environment names="Development">
         <script type="text/javascript" src="~/js/site.js"></script>
         <script type="text/javascript" src="~/js/scrollToTop.js"></script>
