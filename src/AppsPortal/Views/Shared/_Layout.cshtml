@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
     @*<link rel="stylesheet" href="~/css/site.css" />*@
     <link rel="stylesheet" href="~/css/appsite.css" />
-    
+
 
 </head>
 <body>
     <div id="head">
+
         <div class="header">
-            <h4>
-                Apps Portal
-                <br />
-                <small>International Design Services, Inc.</small>
-            </h4>
+            <div id="logo"></div>
+            <div >
+                <h4>
+                    <small>International Design Services, Inc.</small>
+                    <br />
+                    APPS PORTAL
+                </h4>
+            </div>
         </div>
+
 
     </div>
     <nav class="navbar navbar-default navbar-static-top" role="navigation" id="topnavbar">
@@ -48,39 +53,41 @@
     </nav>
 
     @*<div id="wrapper">
-       
 
-        <div id="main" class="container-fluid">
-            <div>
-                @RenderBody()
+
+            <div id="main" class="container-fluid">
+                <div>
+                    @RenderBody()
+                </div>
             </div>
-        </div>
 
-    </div>*@
+        </div>*@
 
     <div class="container-fluid" id="content">
         <div>
             @RenderBody()
+
+
         </div>
-       
+
     </div>
-    
 
+
+
+    <footer>
         <a href="#" class="circle"> </a>
-        
-
-    <div class="footer" id="footer">
-        <div>
+        <div class="container">
             <p class="text-muted">
                 &copy; 2016International Design Services, Inc. <br />
                 Research and Development
             </p>
         </div>
-    </div>
+    </footer>
+
 
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
     <environment names="Development">
         <script type="text/javascript" src="~/js/site.js"></script>
         <script type="text/javascript" src="~/js/scrollToTop.js"></script>
