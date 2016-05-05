@@ -10,39 +10,38 @@ namespace AppsPortal.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Trip",
+                name: "Application",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Created = table.Column<DateTime>(nullable: false),
+                    Description = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
-                    UserName = table.Column<string>(nullable: true)
+                    PromotionVideoUrl = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Trip", x => x.Id);
+                    table.PrimaryKey("PK_Application", x => x.Id);
                 });
             migrationBuilder.CreateTable(
-                name: "Stop",
+                name: "Release",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Arrival = table.Column<DateTime>(nullable: false),
-                    Latitude = table.Column<double>(nullable: false),
-                    Longitude = table.Column<double>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
+                    ApplicationId = table.Column<int>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false),
+                    Details = table.Column<string>(nullable: true),
                     Order = table.Column<int>(nullable: false),
-                    TripId = table.Column<int>(nullable: true)
+                    Version = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Stop", x => x.Id);
+                    table.PrimaryKey("PK_Release", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Stop_Trip_TripId",
-                        column: x => x.TripId,
-                        principalTable: "Trip",
+                        name: "FK_Release_Application_ApplicationId",
+                        column: x => x.ApplicationId,
+                        principalTable: "Application",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -50,8 +49,8 @@ namespace AppsPortal.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable("Stop");
-            migrationBuilder.DropTable("Trip");
+            migrationBuilder.DropTable("Release");
+            migrationBuilder.DropTable("Application");
         }
     }
 }

@@ -4,7 +4,7 @@
     "BingKey": "lololoo"
   },
   "Data": {
-    "WorldContextConnection": "Server=(localdb)\\ProjectsV12;Database=TheWorldDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
+    "AppsContextConnection": "Server=(localdb)\\ProjectsV12;Database=AppsPortalDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
   }
 
 }

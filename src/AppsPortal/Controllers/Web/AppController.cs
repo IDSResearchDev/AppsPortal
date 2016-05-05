@@ -11,17 +11,19 @@ namespace AppsPortal.Controllers.Web
     public class AppController : Controller
     {
         private IMailService _mailService;
-        private IWorldRepository _repository;
 
-        public AppController(IMailService service, IWorldRepository repository)
+        private IAppsRepository _appsRepository;
+
+        public AppController(IMailService service, IAppsRepository appsRepository)
         {
             _mailService = service;
-            _repository = repository;
+            _appsRepository = appsRepository;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var apps = _appsRepository.GetAllApplication();
+            return View(apps);
         }
 
         [Authorize]

@@ -7,55 +7,52 @@ using AppsPortal.Models;
 
 namespace AppsPortal.Migrations
 {
-    [DbContext(typeof(WorldContext))]
-    [Migration("20160128063916_InitialDatabase")]
-    partial class InitialDatabase
+    [DbContext(typeof(AppsContext))]
+    partial class AppsContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("AppsPortal.Models.Stop", b =>
+            modelBuilder.Entity("AppsPortal.Models.Application", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("Arrival");
-
-                    b.Property<double>("Latitude");
-
-                    b.Property<double>("Longitude");
+                    b.Property<string>("Description");
 
                     b.Property<string>("Name");
+
+                    b.Property<string>("PromotionVideoUrl");
+
+                    b.HasKey("Id");
+                });
+
+            modelBuilder.Entity("AppsPortal.Models.Release", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int?>("ApplicationId");
+
+                    b.Property<DateTime>("Date");
+
+                    b.Property<string>("Details");
 
                     b.Property<int>("Order");
 
-                    b.Property<int?>("TripId");
+                    b.Property<string>("Version");
 
                     b.HasKey("Id");
                 });
 
-            modelBuilder.Entity("AppsPortal.Models.Trip", b =>
+            modelBuilder.Entity("AppsPortal.Models.Release", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime>("Created");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("UserName");
-
-                    b.HasKey("Id");
-                });
-
-            modelBuilder.Entity("AppsPortal.Models.Stop", b =>
-                {
-                    b.HasOne("AppsPortal.Models.Trip")
+                    b.HasOne("AppsPortal.Models.Application")
                         .WithMany()
-                        .HasForeignKey("TripId");
+                        .HasForeignKey("ApplicationId");
                 });
         }
     }

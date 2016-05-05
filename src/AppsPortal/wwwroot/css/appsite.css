@@ -343,10 +343,14 @@ footer {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     display: none;
-}
+}w
 
     .circle:hover {
         background: #d7d7d7 url('../../img/angleup24.svg') no-repeat center;
     }
 
 /*background: #ececec;*/
+
+#appwrapper{
+    padding: 0 20px 0
+}
