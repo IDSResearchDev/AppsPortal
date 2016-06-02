@@ -20,15 +20,6 @@
         </ol>
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
-            @*<div class="item active">
-                    <img src="../images/slide1.png" alt="First Slide">
-                </div>
-                <div class="item">
-                    <img src="../images/slide2.png" alt="Second Slide">
-                </div>
-                <div class="item">
-                    <img src="../images/slide3.png" alt="Third Slide">
-                </div>*@
             <div class="item active"><img src="~/img/carousel/pic_1170x500.png"></div>
             <div class="item"><img src="~/img/carousel/pic_1170x500.png"></div>
             <div class="item"><img src="~/img/carousel/pic_1170x500.png"></div>
@@ -49,35 +40,33 @@
         </a>
     </div>
 </div>
-<div class="container-fluid">
-    <div>
-        <div class="row">
-            <div class="page-header">
-                <h2>Apps Portal Demo &copy; International Design Services, Inc.</h2>
-            </div>
-        </div>
-        <div class="row">
-
-            @foreach (var app in Model)
-            {
-                <div id="appwrapper" class="row">
-                    <div class="col-md-12" id="appheader">
-                        <h2 class="text-uppercase text-center">@app.Name</h2>
+<div class="flex-container-column">
+    <div class="flex-child" id="app-title">
+        <h2>Apps Portal Demo &copy; International Design Services, Inc.</h2>
+    </div>
+    <div class="flex-child">
+        @foreach (var app in Model)
+        {
+            <div class="flex-container-column" id="apps">
+                <div class="flex-child" id="title">
+                    <h2 class="text-uppercase text-center">@app.Name</h2>
+                </div>
+                <div class="flex-container flex-child" id="description">
+                    <div class="flex-child">
+                        <iframe width="560"
+                                height="315"
+                                src="@app.PromotionVideoUrl"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                        <div></div>
                     </div>
-                    <div id="appdetails" class="col-md-12">
-                        <div class="col-md-6 col-md-offset-1" id="media">
-                            <iframe width="560"
-                                    height="315"
-                                    src="@app.PromotionVideoUrl"
-                                    frameborder="0"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-4 col-md-offset-1 col-md-pull-1" id="description">
-                            <p>@app.Description</p>
-                        </div>
+                    <div class="flex-child">
+                        <p>@app.Description</p>
+                        <div></div>
                     </div>
                 </div>
-            }
-        </div>    
+            </div>
+        }
     </div>
+
 </div>

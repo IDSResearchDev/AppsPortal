@@ -3,94 +3,68 @@
 <head>
     <title>The World - @ViewBag.Title</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/lib/bootswatch/yeti/bootstrap.min.css" />
+   <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
-    @*<link rel="stylesheet" href="~/css/site.css" />*@
-    <link rel="stylesheet" href="~/css/appsite.css" />
-
-
+    <link rel="stylesheet" href="~/css/portal.css" />
 </head>
 <body>
-    
-
-<div class="container-fluid" id="content">
-    <div class="row">
-        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-            <div class="container-fluid">
-                <div>
-
-                </div>
-                <div class="navbar-header">
-                    <!-- small screen nav toggle -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand">AppsPortal</a>
-                    @*<div class="navbar-brand" id="logo"></div>*@
-                </div>
-                <!-- nav links -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li><a asp-controller="App" asp-action="Index">Home</a></li>
-                        <li><a asp-controller="App" asp-action="Download">Downloads</a></li>
-                        <li><a asp-controller="App" asp-action="About">About</a></li>
-                    </ul>
-                </div>
-
-                <!-- /.navbar-collapse -->
-            </div><!-- container-fluid -->
+    <header>
+        <nav role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">AppsPortal</a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <ul class="nav navbar-nav" id="mainNav">
+                    <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="App" asp-action="Download">Downloads</a></li>
+                    <li><a asp-controller="App" asp-action="About">About</a></li>
+                </ul>
+            </div>
         </nav>
-    </div>
+    </header>
 
     <div>
         @RenderBody()
     </div>
+    
+    <footer>
+        <a href="#" class="circle"> </a>
+        <div class="flex-container" id="footer-content">
+            <div id="logo">
+                <img src="~/img/IDS_logo.png" id="logo-footer" />
+            </div>
+            <div>
+                <h4>
+                    <small>International Design Services, Inc.</small>
+                    <br />
+                    APPS PORTAL
+                </h4>
+            </div>
 
-</div>
-
-
-
-<footer>
-    <a href="#" class="circle"> </a>
-    <div class="container">
-       
-        @*<p class="text-muted">
-            
-            &copy; 2016International Design Services, Inc. <br />
-            Research and Development
-        </p>*@
-
-
-        <div id="logo"><img src="~/img/IDS_logo.png" id="logo-footer" /></div>
-        <div>
-            <h4>
-                <small>International Design Services, Inc.</small>
-                <br />
-                APPS PORTAL
-            </h4>
         </div>
-
-    </div>
-</footer>
+    </footer>
 
 
-<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<environment names="Development">
-    <script type="text/javascript" src="~/js/site.js"></script>
-    <script type="text/javascript" src="~/js/scrollToTop.js"></script>
-</environment>
-<environment names="Production,Staging">
-    <script type="text/javascript" src="~/lib/_app/site.js"></script>
-    <script type="text/javascript" src="~/lib/_app/scrollToTop.js"></script>
-</environment>
+    <environment names="Development">
+        <script type="text/javascript" src="~/js/site.js"></script>
+        <script type="text/javascript" src="~/js/scrollToTop.js"></script>
+    </environment>
+    <environment names="Production,Staging">
+        <script type="text/javascript" src="~/lib/_app/site.js"></script>
+        <script type="text/javascript" src="~/lib/_app/scrollToTop.js"></script>
+    </environment>
 
-@RenderSection("Scripts", false)
+    @RenderSection("Scripts", false)
 
 </body>
 
