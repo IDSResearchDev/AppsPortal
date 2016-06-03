@@ -1,25 +1,40 @@
 ﻿
 /*#region _Layout */
 html, body {
-    background: #ECF0F1;
-    color: rgb(57, 57, 57);
+    background: #F7F9FA; /*#ECF0F1;*/
+    color: #b2b2b2; /*rgb(57, 57, 57);*/
     font-family: 'Raleway';
+    height: 100%;
+}
+
+body {
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 header nav {
     background: #2C3E50;
     font-weight: bolder;
+    margin: 0;
+    padding: 0;
 }
 
 
 footer {
     background: #354B60;
     width: 100%;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     text-shadow: 0 1px 1px rgba(0,0,0,.2);
 }
 
-
+.footer-text {
+    align-self: center;
+    padding-left: .5em;
+}
 
 img#logo-footer {
     max-height: 50px;
@@ -27,7 +42,9 @@ img#logo-footer {
 }
 
 #logo {
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
 .flex-container {
@@ -36,6 +53,7 @@ img#logo-footer {
 
     .flex-container#footer-content {
         justify-content: center;
+        padding: 2em;
     }
 
 .flex-container-column {
@@ -46,12 +64,23 @@ img#logo-footer {
     justify-content: center;
 }
 
+.flex-content {
+    -ms-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin: 0;
+}
+
+    .flex-content #page-content {
+        padding: 40px;
+        margin: 0;
+        text-align: justify;
+    }
 
 
 .flex-child {
     padding: 1em;
 }
-
 
 .circle {
     width: 50px;
@@ -107,4 +136,3 @@ img#logo-footer {
 
 
 /*#endregion */
-
