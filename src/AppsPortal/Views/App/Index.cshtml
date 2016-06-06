@@ -51,18 +51,24 @@
                 <div class="flex-child" id="title">
                     <h2 class="text-uppercase text-center">@app.Name</h2>
                 </div>
-                <div class="flex-container flex-child" id="description">
-                    <div class="flex-child">
+                <div class="flex-container flex-child" id="details">
+                    <div class="flex-child flex-container-column" id="media">
                         <iframe width="560"
                                 height="315"
                                 src="@app.PromotionVideoUrl"
                                 frameborder="0"
                                 allowfullscreen></iframe>
-                        <div></div>
+                        <div><p>Compatibility: TeklaStructure 19.0, 20.0, 21.0 Windows 7, 8, 8.1, 10</p></div>
                     </div>
-                    <div class="flex-child">
+                    <div class="flex-child flex-container-column" id="description">
                         <p>@app.Description</p>
-                        <div></div>
+                        <div class="flex-container" id="more">
+                            <p id="feedback">Downloads: 1,000,000 Feedback:100</p>
+                            <div id="buttons">
+                                <a href="" class="btn btn-success"> Learn more </a>
+                                <a href="#myModal" class="btn btn-success" data-toggle="modal"> Download </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

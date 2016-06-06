@@ -122,7 +122,8 @@ img#logo-footer {
     align-self: center;
 }
 
-.flex-container#description {
+#description p {
+    flex-grow:2;
 }
 
 .flex-container-column#apps {
@@ -133,6 +134,12 @@ img#logo-footer {
         -webkit-align-content: space-around;
         align-content: space-around;
     }
-
+    #feedback{
+        flex-grow:2;
+    }
+    #buttons{
+       align-items:center;
+    }
 
 /*#endregion */
+
