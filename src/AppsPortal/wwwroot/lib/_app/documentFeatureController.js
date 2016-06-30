@@ -1,0 +1,1 @@
+!function(){function o(o,t){function e(t){o.ProjectDetails=t}function n(t){o.Error=t}o.sampledata="wo0o0o0opppp.",t.getProjectDetails().then(e,n)}o.$inject=["$scope","project"],angular.module("documentation-feature").controller("documentFeatureController",o)}();

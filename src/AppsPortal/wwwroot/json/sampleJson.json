@@ -1,0 +1,32 @@
+[
+  {
+    "ProjectName": "PackageTool",
+    "Description": "Test PackageTool. Nulla sodales aliquet iaculis. Quisque ullamcorper posuere magna non imperdiet. Fusce egestas arcu sit amet orci volutpat venenatis. Proin laoreet leo quis nulla iaculis id tincidunt arcu laoreet. Cras non ante felis, at pulvinar arcu. Vivamus porta sollicitudin massa congue elementum. Proin fringilla massa vel mi ultricies et molestie justo dapibus. Mauris elit orci, euismod non sodales ac, gravida eget mauris.",
+    "Compatibility": [
+      {
+        "TeklaStructure": "20.0 / 21.0",
+        "Windows": "7 / 8 / 8.1 / 10"
+      }
+    ]
+  },
+  {
+    "ProjectName": "Model Launcher",
+    "Description": "Test Model Launcher. Nulla sodales aliquet iaculis. Quisque ullamcorper posuere magna non imperdiet. Fusce egestas arcu sit amet orci volutpat venenatis. Proin laoreet leo quis nulla iaculis id tincidunt arcu laoreet. Cras non ante felis, at pulvinar arcu. Vivamus porta sollicitudin massa congue elementum. Proin fringilla massa vel mi ultricies et molestie justo dapibus. Mauris elit orci, euismod non sodales ac, gravida eget mauris.",
+    "Compatibility": [
+      {
+        "TeklaStructure": "19.0 / 20.0 / 21.0",
+        "Windows": "7 / 8 / 8.1 / 10"
+      }
+    ]
+  },
+  {
+    "ProjectName": "Connection Creator",
+    "Description": "Description for Connection Creator. Nulla sodales aliquet iaculis. Quisque ullamcorper posuere magna non imperdiet. Fusce egestas arcu sit amet orci volutpat venenatis. Proin laoreet leo quis nulla iaculis id tincidunt arcu laoreet. Cras non ante felis, at pulvinar arcu. Vivamus porta sollicitudin massa congue elementum. Proin fringilla massa vel mi ultricies et molestie justo dapibus. Mauris elit orci, euismod non sodales ac, gravida eget mauris.",
+    "Compatibility": [
+      {
+        "TeklaStructure": "19.0 / 20.0 / 21.0",
+        "Windows": "7 / 8 / 8.1 / 10"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+<div>
+    This is document.html .
+    <div>
+        <div ng-repeat="projects in ProjectDetails">
+            <div>
+                <div>ProductName: {{projects.ProjectName}}</div>
+                <div>Description: {{projects.Description}}</div>
+            </div>
+            <div ng-repeat="items in projects.Compatibility">
+                <div>Tekla Structure: {{items.TeklaStructure}}</div>
+                <div>Windows: {{items.Windows}}</div>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>

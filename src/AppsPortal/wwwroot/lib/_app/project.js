@@ -1,0 +1,1 @@
+!function(){function t(t){function n(){return t.get("http://localhost:8000/json/sampleJson.json").then(function(t){return t.data})}return{getProjectDetails:n}}t.$inject=["$http"],angular.module("documentation-feature").factory("project",t)}();

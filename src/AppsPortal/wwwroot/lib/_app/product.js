@@ -1,0 +1,1 @@
+!function(){function t(){function t(){return $http.get("http://localhost:8000/json/sampleJson.json").then(function(t){return t.data})}return{getProductDetails:t}}angular.module("documentation-feature").factory("product",t)}();

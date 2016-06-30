@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("documentation-feature",["ngRoute"]).config(["$routeProvider",function(e){e.when("/",{controller:"documentFeatureController",templateUrl:"/views/feature.html"}),e.when("/application/documentation",{controller:"documentFeatureController",templateUrl:"/views/document.html"}),e.otherwise({redirectTo:"/"})}])}();

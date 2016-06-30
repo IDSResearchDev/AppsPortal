@@ -26,6 +26,8 @@ namespace AppsPortal.Controllers.Web
             return View(apps);
         }
 
+        
+
         [Authorize]
         public IActionResult Trips()
         {
@@ -42,6 +44,16 @@ namespace AppsPortal.Controllers.Web
             return View();
         }
 
+        public IActionResult Documentation()
+        {
+            return View();
+        }
+
+        public IActionResult SampleJson()
+        {
+            return View();
+        }
+        
         [HttpPost]
         public IActionResult Contact(ContactViewModel model)
         {

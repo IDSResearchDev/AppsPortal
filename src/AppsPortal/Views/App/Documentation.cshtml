@@ -1,13 +1,137 @@
-@{ 
+@{
     ViewBag.Title = "Documentation Page";
 }
+@section Scripts{
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
 
-<div class="container-fluid">
-    <h1>3 column layout</h1>
-    <div class="row">
-        <div class="col-md-4" style="background-color: aquamarine">
-            Left
-        </div>
+    
+    <script src="~/js/simpleControls.js"></script>
+    <script src="~/js/app-downloads.js"></script>
+    <script src="~/js/downloadController.js"></script>
+
+    <script src="~/js/documentation-feature.js"></script>
+    <script src="~/js/documentFeatureController.js"></script>
+    <script src="~/js/project.js"></script>
+    
+}
+<header>
+    <div id="doc-banner">
+        <h1 class="text-center text-capitalize">
+            PACKAGE TOOL
+            <br />
+            <small>Extension</small>
+        </h1>
     </div>
+</header>
+
+<div id="doc-menu" class="flex-container" >
+    <ul>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#/application/documentation">Documentation</a></li>
+    </ul>
+</div>
+
+<div id="feature-container" ng-app="documentation-feature">
+    @*<div class="feature-flex-container" >*@
+   
+        <div ng-view>
+            
+        </div>
+
+    @*  </div>*@
 
 </div>
+
+@*<div class="row">
+        <div class="col-md-4" style="background-color: aquamarine">
+            <p>Left</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor sapien tristique neque mollis, eget vulputate ligula vestibulum. Mauris ac pharetra ex. Morbi aliquet ac sem quis venenatis. Maecenas massa nibh, sodales in cursus ut, semper in mauris. Aenean iaculis tortor ut condimentum accumsan. Sed euismod finibus ante, sit amet tristique eros interdum ut. Nulla viverra eros at libero suscipit mattis. Nulla eget hendrerit nulla. Quisque eget justo sed tortor molestie vehicula id id odio. Vivamus ultricies magna et eleifend facilisis. In hac habitasse platea dictumst. Morbi eget magna justo. Etiam at nisi odio. Morbi sodales mattis auctor. Proin sit amet nisi risus. Maecenas mollis pulvinar auctor.</p>
+        </div>
+        <div class="col-md-4" style="background-color: aqua">
+            <p>Middle</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor sapien tristique neque mollis, eget vulputate ligula vestibulum. Mauris ac pharetra ex. Morbi aliquet ac sem quis venenatis. Maecenas massa nibh, sodales in cursus ut, semper in mauris. Aenean iaculis tortor ut condimentum accumsan. Sed euismod finibus ante, sit amet tristique eros interdum ut. Nulla viverra eros at libero suscipit mattis. Nulla eget hendrerit nulla. Quisque eget justo sed tortor molestie vehicula id id odio. Vivamus ultricies magna et eleifend facilisis. In hac habitasse platea dictumst. Morbi eget magna justo. Etiam at nisi odio. Morbi sodales mattis auctor. Proin sit amet nisi risus. Maecenas mollis pulvinar auctor.</p>
+        </div>
+        <div class="col-md-4" style="background-color: burlywood">
+            <p>Right</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor sapien tristique neque mollis, eget vulputate ligula vestibulum. Mauris ac pharetra ex. Morbi aliquet ac sem quis venenatis. Maecenas massa nibh, sodales in cursus ut, semper in mauris. Aenean iaculis tortor ut condimentum accumsan. Sed euismod finibus ante, sit amet tristique eros interdum ut. Nulla viverra eros at libero suscipit mattis. Nulla eget hendrerit nulla. Quisque eget justo sed tortor molestie vehicula id id odio. Vivamus ultricies magna et eleifend facilisis. In hac habitasse platea dictumst. Morbi eget magna justo. Etiam at nisi odio. Morbi sodales mattis auctor. Proin sit amet nisi risus. Maecenas mollis pulvinar auctor.</p>
+        </div>
+    </div>*@
+
+
+@*<div class="row">*@
+@* For sidebar *@
+@*<div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="page-header">
+                    <h6>Package Tool 1.3</h6>
+                </div>
+                <div class="list-group ">
+                    <div>
+                        <div class="panel-heading">Getting Started</div>
+                        <a href="#" class="list-group-item" style="list-style-type: none">Installation</a>
+                        <a href="#" class="list-group-item">Specification</a>
+                        <a href="#" class="list-group-item">Installation</a>
+                        <a href="#" class="list-group-item">Specification</a>
+                        <a href="#" class="list-group-item">Installation</a>
+                        <a href="#" class="list-group-item">Installation</a>
+                        <a href="#" class="list-group-item">Specification</a>
+                        <a href="#" class="list-group-item">Specification</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+@* For article *@
+@*<div class="col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="page-header">
+                <h3>Package Tool <small>Lastest update Package Tool 1.3</small></h3>
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus augue erat. Cras a nisl velit. Phasellus dignissim est at erat aliquam finibus. Donec cursus, lorem vitae sollicitudin aliquam, tellus odio volutpat odio, sit amet lacinia quam massa nec justo. Etiam mollis ex a nulla vulputate luctus. In sed tincidunt odio, non dictum diam. In ac libero id justo eleifend egestas et facilisis sapien. Etiam non lacinia elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tempor erat et lorem pretium volutpat sit amet eget mi. Vivamus vehicula elementum mollis. Ut tincidunt ut metus ac malesuada. Sed ac nibh quam.</p>
+
+                <p>Maecenas non nisl ut magna tempor ornare. Maecenas tempus, felis in tincidunt laoreet, eros enim dignissim libero, non dictum risus urna ac turpis. Morbi suscipit turpis sit amet purus dignissim, quis consequat erat iaculis. Aenean dapibus leo diam, eget vehicula diam accumsan sed. Curabitur feugiat dolor in risus interdum elementum. Aliquam at massa felis. Quisque vitae risus eget nisi feugiat convallis iaculis a odio. Nulla vulputate magna id magna dictum lobortis. Donec posuere diam a porttitor hendrerit. Nullam mi velit, elementum et pharetra at, scelerisque vitae massa. Mauris semper bibendum elit, et blandit dolor pharetra dapibus. Nulla vel enim tellus.</p>
+
+                <p>Pellentesque ligula ipsum, accumsan sed imperdiet lacinia, efficitur id enim. Integer ullamcorper neque lectus, id convallis justo maximus eu. In nec erat sed enim tristique efficitur quis eget massa. Maecenas ut commodo nibh. Duis id mauris ante. Pellentesque fermentum lectus lorem, id commodo erat tincidunt vel. Donec pulvinar aliquam convallis. Vestibulum sit amet rutrum massa. Sed at tincidunt ligula. Vivamus bibendum blandit interdum.</p>
+
+                <p>Aliquam accumsan quam ut erat bibendum, quis egestas urna laoreet. Duis sed erat mauris. In non lectus porttitor, semper massa eu, malesuada nibh. Proin tristique risus vitae ipsum porttitor, hendrerit vulputate orci viverra. Duis in porttitor mi, quis viverra nisl. Aliquam erat volutpat. Proin malesuada euismod laoreet.</p>
+
+                <p>Pellentesque pretium nibh ante, ut dapibus sem pretium ac. Phasellus sit amet rutrum tortor. Duis malesuada, mauris ut porta mattis, nulla nibh faucibus ex, sed imperdiet libero justo ac ligula. Aenean molestie massa tellus, quis interdum dui pellentesque consequat. Integer suscipit vestibulum ex, ac efficitur nisl suscipit nec. Proin accumsan elit mauris. Vestibulum tincidunt mauris vel congue pretium.</p>
+
+
+                <img src="~/img/carousel/700x300.png" class="img-responsive center-block" style="margin: auto;" />
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus augue erat. Cras a nisl velit. Phasellus dignissim est at erat aliquam finibus. Donec cursus, lorem vitae sollicitudin aliquam, tellus odio volutpat odio, sit amet lacinia quam massa nec justo. Etiam mollis ex a nulla vulputate luctus. In sed tincidunt odio, non dictum diam. In ac libero id justo eleifend egestas et facilisis sapien. Etiam non lacinia elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tempor erat et lorem pretium volutpat sit amet eget mi. Vivamus vehicula elementum mollis. Ut tincidunt ut metus ac malesuada. Sed ac nibh quam.</p>
+
+                <p>Maecenas non nisl ut magna tempor ornare. Maecenas tempus, felis in tincidunt laoreet, eros enim dignissim libero, non dictum risus urna ac turpis. Morbi suscipit turpis sit amet purus dignissim, quis consequat erat iaculis. Aenean dapibus leo diam, eget vehicula diam accumsan sed. Curabitur feugiat dolor in risus interdum elementum. Aliquam at massa felis. Quisque vitae risus eget nisi feugiat convallis iaculis a odio. Nulla vulputate magna id magna dictum lobortis. Donec posuere diam a porttitor hendrerit. Nullam mi velit, elementum et pharetra at, scelerisque vitae massa. Mauris semper bibendum elit, et blandit dolor pharetra dapibus. Nulla vel enim tellus.</p>
+
+                <p>Pellentesque ligula ipsum, accumsan sed imperdiet lacinia, efficitur id enim. Integer ullamcorper neque lectus, id convallis justo maximus eu. In nec erat sed enim tristique efficitur quis eget massa. Maecenas ut commodo nibh. Duis id mauris ante. Pellentesque fermentum lectus lorem, id commodo erat tincidunt vel. Donec pulvinar aliquam convallis. Vestibulum sit amet rutrum massa. Sed at tincidunt ligula. Vivamus bibendum blandit interdum.</p>
+
+                <p>Aliquam accumsan quam ut erat bibendum, quis egestas urna laoreet. Duis sed erat mauris. In non lectus porttitor, semper massa eu, malesuada nibh. Proin tristique risus vitae ipsum porttitor, hendrerit vulputate orci viverra. Duis in porttitor mi, quis viverra nisl. Aliquam erat volutpat. Proin malesuada euismod laoreet.</p>
+
+                <p>Pellentesque pretium nibh ante, ut dapibus sem pretium ac. Phasellus sit amet rutrum tortor. Duis malesuada, mauris ut porta mattis, nulla nibh faucibus ex, sed imperdiet libero justo ac ligula. Aenean molestie massa tellus, quis interdum dui pellentesque consequat. Integer suscipit vestibulum ex, ac efficitur nisl suscipit nec. Proin accumsan elit mauris. Vestibulum tincidunt mauris vel congue pretium.</p>
+
+            </div>*@
+@*@*<div class="media">
+        <div class="media-left">
+            <img class="media-object alignMiddle" src="~/img/IDS_logo.png" />
+        </div>
+        <div class="media-body">
+            <h5 class="">
+                International Design Services, Inc.
+                <br />
+                <small>Research &amp; Development</small>
+            </h5>
+        </div>
+    </div>*@
+@*</div>*@
+
+@*    </div>*@
+@*  </div>*@
+@*</div>*@

@@ -1,0 +1,1 @@
+!function(){angular.module("HomePreview",["ngRoute"]).config(["$routeProvider",function(e){e.when("/",{controller:"projectHomePreviewController",templateUrl:"/views/projHomePreview.html"}).otherwise({redirectTo:"/"})}])}();

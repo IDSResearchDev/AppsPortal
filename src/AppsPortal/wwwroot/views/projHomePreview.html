@@ -1,0 +1,30 @@
+<div>
+    <div ng-repeat="projects in ProjectDetails">
+        <div class="flex-container-column" id="apps">
+            <div class="flex-child" id="title">
+                <h2 class="text-uppercase text-center">{{projects.ProjectName}}</h2>
+            </div>
+            <div class="flex-container flex-child" id="details">
+                <div class="flex-child flex-container-column" id="media">
+                    <iframe width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/v=KvDGDbFoiQ0"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                    <div ></div>
+                    <div class="media-requirements" ng-repeat="items in projects.Compatibility"><p>Compatibility: TeklaStructure {{items.TeklaStructure}} Windows {{items.Windows}}</p></div>
+                </div>
+                <div class="flex-child flex-container-column" id="description">
+                    <p>{{projects.Description}}</p>
+                    <div class="flex-container" id="more">
+                        <p id="feedback">Downloads: 1,000,000 Feedback:100</p>
+                        <div id="buttons">
+                            <a href="" class="btn btn-success"> Learn more </a>
+                            <a href="#myModal" class="btn btn-success" data-toggle="modal"> Download </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

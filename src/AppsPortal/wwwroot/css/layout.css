@@ -1,0 +1,72 @@
+html, body {
+    font-family: 'Raleway';
+    background: #F7F9FA;
+    height: 100%;
+}
+
+a:hover {
+    color: gray;
+}
+
+header {
+    display: flex;
+    background: #2c3e50;
+    padding-top: 18px;
+    justify-content: space-around;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.flex-container{
+
+
+}
+
+.flex-child{
+
+}
+
+h1, p {
+    font-family: Raleway;
+    color: #b2b2b2;
+}
+
+footer {
+    display: flex;
+    padding-top: 100px;
+    width: 100%;
+    background: #2c3e50;
+    margin: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+    footer img.logo {
+        height: 60px;
+        width: 100px;
+    }
+
+
+
+/* Cirlce rounded shape ~ scroll to Top function*/
+.circle {
+    width: 50px;
+    height: 50px;
+    background: #ececec url('../../img/angleup24.svg') no-repeat center;
+    bottom: 75px;
+    position: fixed;
+    right: 40px;
+    /*text-align: center;*/
+    vertical-align: central;
+    align-items: center;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: none;
+}
+
+    .circle:hover {
+        background: #d7d7d7 url('../../img/angleup24.svg') no-repeat center;
+    }
+
+
