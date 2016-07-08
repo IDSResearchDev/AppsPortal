@@ -1,0 +1,23 @@
+<div>
+
+    <table class="table">
+
+        <tr>
+            <th> Name </th>
+
+            <th> Description </th>
+            <th> Compatibility {{model.count}}</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="project in model.projects">
+            <td> {{project.ProjectName}} </td>
+            <td> {{project.Description}} </td>
+            <td ng-repeat="compatibility in project.Compatibility">
+                TeklaStructure: {{compatibility.TeklaStructure}}
+                <br />
+                Windows: {{compatibility.Windows}}
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</div>

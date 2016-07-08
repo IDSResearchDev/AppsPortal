@@ -1,11 +1,11 @@
-<div>
-    <div ng-repeat="projects in ProjectDetails">
+<div ng-repeat="projects in ProjectDetails">
+    <!--<div ng-repeat="projects in ProjectDetails">
         <div class="flex-container-column" id="apps">
             <div class="flex-child" id="title">
                 <h2 class="text-uppercase text-center">{{projects.ProjectName}}</h2>
             </div>
             <div class="flex-container flex-child" id="details">
-                <div class="flex-child flex-container-column" id="media">
+                <div class="flex-child flex-container-column embed-responsive-item" id="media">
                     <iframe width="560"
                             height="315"
                             src="https://www.youtube.com/embed/v=KvDGDbFoiQ0"
@@ -26,5 +26,70 @@
                 </div>
             </div>
         </div>
+    </div>-->
+
+    <!--<div class="feature-flex-container flex-column content-body">
+        <div class="feature-content-header" id="title">
+            <h2 class="text-uppercase text-center">{{projects.ProjectName}}</h2>
+        </div>
+        <div class="feature-content-body flex-container flex-row" id="con">
+            <div class="feature-item1 flex-container">
+                <div class="video-container" id="item1-sub1">
+                    <iframe width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/v=kvdgdbfoiq0"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+                <div id="item2-sub2" class="media-requirements" ng-repeat="items in projects.Compatibility"><p>Compatibility: TeklaStructure {{items.TeklaStructure}} <br/> Windows {{items.Windows}}</p></div>
+            </div>
+            <div class="feature-item2 flex-container" id="projectDescription" style="border: 1px solid #ffd800;">
+                <div id="item2-sub1" style="border: 1px solid #b200ff;"><p>{{projects.Description}}</p></div>
+
+                <div class="flex-container" id="item2-sub2" style="border: 1px solid teal;">
+                    <div id="feedback"><p>Downloads: 1,000,000 Feedback:100</p></div>
+                    <div id="buttons" style="border: 1px solid brown; ">
+                        <a href="" class="btn btn-success" > Learn more </a>
+                        <a href="#myModal" class="btn btn-success" data-toggle="modal" > Download </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+    <div class="feature-flex-container flex-column content-body">
+        <section class="feature-content-header">
+            <h2 class="text-uppercase text-center">{{projects.ProjectName}}</h2>
+        </section>
+        <section class="feature-content-body flex-container flex-row" id="con">
+            <div class="feature-item1 flex-container flex-column">
+                <div id="item1-sub1" class="video-container"><!-- class="video-container" -->
+                    <iframe width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/E5ln4uR4TwQ"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+                <div id="item2-sub2" ng-repeat="items in projects.Compatibility">
+                    <span>Compatibility: TeklaStructure {{items.TeklaStructure}} | Windows {{items.Windows}}</span>
+                </div>
+            </div>
+            <div class="feature-item2 flex-container flex-column" id="apple">
+                <div id="item2-sub1">
+                    <p>{{projects.Description}}</p>
+                </div>
+                <div id="item2-sub2" class="flex-container flex-row">
+                    <div id="feedback">
+                        <span>Downloads: 1,000,000 | Feedback: 100</span>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-success"> Learn more </a>
+                        <a href="#myModal" class="btn btn-success" data-toggle="modal"> Download </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
+

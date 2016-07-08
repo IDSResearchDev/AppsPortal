@@ -6,15 +6,17 @@
     <script src="~/lib/angular/angular.min.js"></script>
     <script src="~/lib/angular-route/angular-route.min.js"></script>
 
-    
+
     <script src="~/js/simpleControls.js"></script>
     <script src="~/js/app-downloads.js"></script>
     <script src="~/js/downloadController.js"></script>
 
+
     <script src="~/js/documentation-feature.js"></script>
     <script src="~/js/documentFeatureController.js"></script>
     <script src="~/js/project.js"></script>
-    
+    <script src="~/js/movie-list.component.js"></script>
+
 }
 <header>
     <div id="doc-banner">
@@ -26,7 +28,7 @@
     </div>
 </header>
 
-<div id="doc-menu" class="flex-container" >
+<div id="doc-menu" class="flex-container">
     <ul>
         <li><a href="#">Feature</a></li>
         <li><a href="#/application/documentation">Documentation</a></li>
@@ -35,10 +37,12 @@
 
 <div id="feature-container" ng-app="documentation-feature">
     @*<div class="feature-flex-container" >*@
-   
-        <div ng-view>
-            
-        </div>
+
+    <movie-List></movie-List>
+
+    <div ng-view>
+
+    </div>
 
     @*  </div>*@
 

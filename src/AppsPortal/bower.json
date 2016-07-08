@@ -1,8 +1,7 @@
 {
-	"name": "ASP.NET",
-	"private": true,
-  "dependencies": 
-  {
+  "name": "ASP.NET",
+  "private": true,
+  "dependencies": {
     "underscore": "*",
     "jquery": "~2.1.4",
     "jquery-validation": "~1.14.0",
@@ -10,8 +9,11 @@
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
     "bootswatch-dist": "3.3.0-yeti",
-    "angular": "~1.4.5",
-    "angular-route": "~1.4.5",
+    "angular": "1.5.7",
+    "angular-route": "1.5.7",
     "travelmap": "~1.0.2"
+  },
+  "resolutions": {
+    "angular": "1.5.7"
   }
 }
